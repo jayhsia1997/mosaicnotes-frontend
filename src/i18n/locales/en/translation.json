@@ -1,0 +1,79 @@
+{
+  "base": {
+    "title": "MosaicNotes",
+    "description": "A decentralized blogging platform for sharing your stories."
+  },
+  "home": {
+    "hero": {
+      "title": "Piece by piece, your story unfolds.",
+      "subtitle": "Your mosaic of memories and growth.",
+      "startButton": "Start Creating",
+      "exploreButton": "Explore Map"
+    },
+    "features": {
+      "immutable": {
+        "title": "Immutable Publishing",
+        "description": "Your stories are forever recorded on the chain, unalterable by anyone."
+      },
+      "ownership": {
+        "title": "Own Your Data",
+        "description": "You own your articles and followers, no platform dependency."
+      },
+      "access": {
+        "title": "Borderless Access",
+        "description": "Read and share freely from anywhere in the world."
+      }
+    }
+  },
+  "common": {
+    "write": "Write",
+    "read": "Read",
+    "explore": "Explore",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "footer": {
+    "tagline": "Piece by piece, your story unfolds.",
+    "copyright": "© {{year}} MosaicNotes. All rights reserved."
+  },
+  "auth": {
+    "signIn": {
+      "title": "Welcome Back",
+      "subtitle": "Log in to your account",
+      "button": "Log In",
+      "forgotPassword": "Forgot your password?"
+    },
+    "createAccount": {
+      "title": "Create Your Account",
+      "description": "Join us and start your journey",
+      "button": "Create Account",
+      "confirmPassword": "Confirm Password"
+    },
+    "resetPassword": {
+      "title": "Reset Your Password",
+      "description": "Enter your email to receive a password reset link",
+      "button": "Reset Password",
+      "emailSent": "Reset Password Email Sent",
+      "emailSentDescription": "We've sent you an email with instructions to reset your password. Please check your inbox."
+    },
+    "sendResetLink": "Send Reset Link",
+    "backToSignIn": "Back to Sign In",
+    "haveAccount": "Already have an account?",
+    "noAccount": "Don't have an account?",
+    "rememberPassword": "Remember your password?",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "passwordTooShort": "Password must be at least 8 characters long",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordsDoNotMatch": "Passwords do not match"
+    }
+  }
+}
