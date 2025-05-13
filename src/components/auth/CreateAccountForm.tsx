@@ -65,7 +65,7 @@ const CreateAccountForm: React.FC = () => {
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-700"
         >
           {t("auth.name")}
         </label>
@@ -80,7 +80,7 @@ const CreateAccountForm: React.FC = () => {
             onChange={handleChange}
             className={`appearance-none block w-full px-3 py-2 border ${
               errors.name ? "border-red-300" : "border-gray-300"
-            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:text-white`}
+            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm`}
           />
           {errors.name && <p className="mt-2 text-sm text-red-600">{errors.name}</p>}
         </div>
@@ -89,7 +89,7 @@ const CreateAccountForm: React.FC = () => {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-700"
         >
           {t("auth.email")}
         </label>
@@ -104,7 +104,7 @@ const CreateAccountForm: React.FC = () => {
             onChange={handleChange}
             className={`appearance-none block w-full px-3 py-2 border ${
               errors.email ? "border-red-300" : "border-gray-300"
-            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:text-white`}
+            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm`}
           />
           {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email}</p>}
         </div>
@@ -113,7 +113,7 @@ const CreateAccountForm: React.FC = () => {
       <div>
         <label
           htmlFor="password"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-700"
         >
           {t("auth.password")}
         </label>
@@ -128,7 +128,7 @@ const CreateAccountForm: React.FC = () => {
             onChange={handleChange}
             className={`appearance-none block w-full px-3 py-2 border ${
               errors.password ? "border-red-300" : "border-gray-300"
-            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:text-white`}
+            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm`}
           />
           {errors.password && <p className="mt-2 text-sm text-red-600">{errors.password}</p>}
         </div>
@@ -137,7 +137,7 @@ const CreateAccountForm: React.FC = () => {
       <div>
         <label
           htmlFor="confirmPassword"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-700"
         >
           {t("auth.createAccount.confirmPassword")}
         </label>
@@ -152,7 +152,7 @@ const CreateAccountForm: React.FC = () => {
             onChange={handleChange}
             className={`appearance-none block w-full px-3 py-2 border ${
               errors.confirmPassword ? "border-red-300" : "border-gray-300"
-            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:text-white`}
+            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm`}
           />
           {errors.confirmPassword && (
             <p className="mt-2 text-sm text-red-600">{errors.confirmPassword}</p>
@@ -167,11 +167,11 @@ const CreateAccountForm: React.FC = () => {
       </div>
 
       <div className="text-center">
-        <p className="text-sm text-gray-600 dark:text-gray-400">
+        <p className="text-sm text-gray-600">
           {t("auth.haveAccount")}{" "}
           <Link
             to="/auth/sign-in"
-            className="font-medium text-brand-600 hover:text-brand-500 dark:text-brand-400"
+            className="font-medium text-brand-600 hover:text-brand-500"
           >
             {t("auth.signIn.button")}
           </Link>

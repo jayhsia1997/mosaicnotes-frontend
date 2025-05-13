@@ -5,11 +5,11 @@ import Button from "../../components/ui/button/Button";
 
 const ResetPasswordForm: React.FC = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
+  const [ formData, setFormData ] = useState({
     email: "",
   });
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [ errors, setErrors ] = useState<Record<string, string>>({});
+  const [ isSubmitted, setIsSubmitted ] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -49,13 +49,15 @@ const ResetPasswordForm: React.FC = () => {
   if (isSubmitted) {
     return (
       <div className="text-center space-y-4">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+        <h2 className="text-2xl font-bold text-gray-900">
           {t("auth.resetPassword.emailSent")}
         </h2>
-        <p className="text-gray-600 dark:text-gray-400">{t("auth.resetPassword.emailSentDescription")}</p>
+        <p className="text-gray-600">
+          {t("auth.resetPassword.emailSentDescription")}
+        </p>
         <Link
           to="/auth/sign-in"
-          className="inline-block font-medium text-brand-600 hover:text-brand-500 dark:text-brand-400"
+          className="inline-block font-medium text-brand-600 hover:text-brand-500"
         >
           {t("auth.backToSignIn")}
         </Link>
@@ -68,7 +70,7 @@ const ResetPasswordForm: React.FC = () => {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-700"
         >
           {t("auth.email")}
         </label>
@@ -83,7 +85,7 @@ const ResetPasswordForm: React.FC = () => {
             onChange={handleChange}
             className={`appearance-none block w-full px-3 py-2 border ${
               errors.email ? "border-red-300" : "border-gray-300"
-            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:text-white`}
+            } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm`}
           />
           {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email}</p>}
         </div>
@@ -96,11 +98,11 @@ const ResetPasswordForm: React.FC = () => {
       </div>
 
       <div className="text-center">
-        <p className="text-sm text-gray-600 dark:text-gray-400">
+        <p className="text-sm text-gray-600">
           {t("auth.rememberPassword")}{" "}
           <Link
             to="/auth/sign-in"
-            className="font-medium text-brand-600 hover:text-brand-500 dark:text-brand-400"
+            className="font-medium text-brand-600 hover:text-brand-500"
           >
             {t("auth.signIn.button")}
           </Link>
