@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import LanguageSelector from "../components/common/LanguageSelector.tsx";
-import { ThemeToggleButton } from "../components/common/ThemeToggleButton.tsx";
+import { ThemeToggleDropdown } from "../components/common/ThemeToggleDropdown.tsx";
 import Button from "../components/ui/button/Button.tsx";
 import AppLogo from "./AppLogo.tsx";
 
@@ -13,9 +13,7 @@ const AppHeader: React.FC = () => {
       <div className="flex items-center space-x-3">
         <Link to="/" className="flex items-center space-x-3">
           <AppLogo className="h-8 w-auto" />
-          <span className="text-2xl font-bold">
-            {t("base.title")}
-          </span>
+          <span className="text-2xl font-bold">{t("base.title")}</span>
         </Link>
       </div>
       <div className="flex items-center space-x-6">
@@ -23,7 +21,7 @@ const AppHeader: React.FC = () => {
           {t("common.write")}
         </a>
         <LanguageSelector />
-        <ThemeToggleButton />
+        <ThemeToggleDropdown />
         <Link to="/auth/create-account">
           <Button variant="outline" size="sm">
             {t("auth.createAccount.button")}

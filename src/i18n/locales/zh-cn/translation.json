@@ -28,10 +28,14 @@
   "common": {
     "write": "写作",
     "read": "阅读",
-    "explore": "探索",
+    "explore": "探索"
+  },
+  "settings": {
     "theme": {
       "light": "浅色",
-      "dark": "深色"
+      "dark": "深色",
+      "auto": "跟随系统",
+      "current": "当前主题：{{theme}}"
     }
   },
   "footer": {
@@ -74,6 +78,15 @@
       "passwordTooShort": "密码长度至少需要 8 个字符",
       "confirmPasswordRequired": "请确认密码",
       "passwordsDoNotMatch": "密码不匹配"
+    }
+  },
+  "customizations": {
+    "jetbrains": {
+      "settings": {
+        "org.jetbrains.plugins.github:app:GithubSettings.clone_git_using_ssh": true,
+        "com.intellij:app:Vcs-Log-App-Settings.show_changes_from_parents": true,
+        "com.intellij:app:BaseRefactoringSettings.move_search_for_references_for_file": false
+      }
     }
   }
 }

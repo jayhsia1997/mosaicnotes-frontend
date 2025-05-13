@@ -28,10 +28,15 @@
   "common": {
     "write": "Write",
     "read": "Read",
-    "explore": "Explore",
+    "explore": "Explore"
+  },
+  "settings": {
     "theme": {
+      "title": "Theme Settings",
       "light": "Light",
-      "dark": "Dark"
+      "dark": "Dark",
+      "auto": "Sync with System",
+      "current": "Current theme: {{theme}}"
     }
   },
   "footer": {

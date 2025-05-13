@@ -28,10 +28,14 @@
   "common": {
     "write": "寫作",
     "read": "閱讀",
-    "explore": "探索",
+    "explore": "探索"
+  },
+  "settings": {
     "theme": {
       "light": "淺色",
-      "dark": "深色"
+      "dark": "深色",
+      "auto": "跟隨系統",
+      "current": "當前主題：{{theme}}"
     }
   },
   "footer": {
